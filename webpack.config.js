@@ -24,7 +24,7 @@ module.exports = {
     entry: './src/js/app.js',
     output: {
         filename: "./js/script.js",
-        publicPath: '/',
+        publicPath: '../',
     },
     devtool: "source-map",
     mode: "production",
@@ -67,7 +67,6 @@ module.exports = {
               },{
                   loader: "resolve-url-loader",
                   options: {
-
                   }
               }, {
                   loader: 'postcss-loader', // Run post css actions
@@ -112,4 +111,7 @@ module.exports = {
             'window.jQuery': 'jquery'
         })
     ].concat(htmlPlugins),
+    devServer: {
+        publicPath: '/',
+    }
 }
