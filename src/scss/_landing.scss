@@ -257,6 +257,7 @@
   @include MDCTextFieldMixins.hover-outline-color(#212121);
   @include MDCTextFieldMixins.focused-outline-color(#212121);
   @include MDCTextFieldMixins.placeholder-color(#212121);
+  @include MDCTextFieldMixins.caret-color(#212121);
 }
 .footer-text{
   font-family: Roboto;
