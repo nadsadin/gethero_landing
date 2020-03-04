@@ -1,0 +1,31 @@
+.navbar{
+  min-height: 70px;
+  &-brand{
+    display: flex;
+    align-items: center;
+    font-family: Questrial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 100%;
+    &-text{
+      color: #212121;
+    }
+    &-description{
+      color: #B6B6B6;
+    }
+  }
+  .btn-outline{
+    width: 160px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0.25px;
+    color: #212121;
+    border: 1px solid #000;
+    border-radius: 30px;
+    padding: 8px 12px;
+  }
+}
