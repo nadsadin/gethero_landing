@@ -16,14 +16,25 @@
 
 <body>
 
-  <nav class="navbar fixed-top">
+  <nav class="navbar navbar-light fixed-top navbar-expand-xl">
     <div class="container">
-      <a href="#" class="navbar-brand">
+      <a href="#" class="navbar-brand mr-auto">
         <span class="navbar-brand-text">gethero</span>&nbsp;
         <span class="navbar-brand-description">для бизнеса</span>
       </a>
-      <div class="ml-auto d-flex align-items-center">
-        <a href="#form" class="btn btn-outline anchor-link d-none d-sm-inline-block">Заполнить заявку</a>
+      <a href="#form" class="btn btn-outline anchor-link d-none d-sm-inline-block d-xl-none">Заполнить заявку</a>
+      <button class="navbar-toggler" data-target="#navbar-collapse" data-toggle="collapse" type="button">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="navbar-collapse">
+        <div class="navbar-nav ml-auto align-items-end pt-2 pt-xl-0 pr-3">
+          <a href="#about" class="nav-item nav-link anchor-link">О проекте</a>
+          <a href="#gethero" class="nav-item nav-link anchor-link">Что это</a>
+          <a href="#how_it_works" class="nav-item nav-link anchor-link">Как это работает</a>
+          <a href="#advantages" class="nav-item nav-link anchor-link">Преимущества</a>
+          <a href="#charity" class="nav-item nav-link anchor-link">Благотворительность</a>
+          <a href="#form" class="btn btn-outline anchor-link d-inline-block d-sm-none d-xl-block ml-xl-3">Заполнить заявку</a>
+        </div>
       </div>
     </div>
   </nav>

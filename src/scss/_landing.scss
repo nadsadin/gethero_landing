@@ -51,7 +51,7 @@
   }
 }
 .section-title{
-  margin-top: 107px;
+  //margin-top: 107px;
   margin-bottom: 107px;
   font-family: Montserrat;
   font-style: normal;
@@ -65,6 +65,7 @@
 
 }
 #about{
+  padding-top: 107px;
   padding-bottom: 88px;
   text-align: center;
   .about-text{
@@ -122,6 +123,7 @@
   }
 }
 #how_it_works{
+  padding-top: 107px;
   padding-bottom: 78px;
   .hiw{
     &-card{
@@ -160,6 +162,7 @@
   }
 }
 #advantages{
+  padding-top: 107px;
   padding-bottom: 78px;
   .advantage{
     display: flex;
@@ -197,7 +200,7 @@
   background-image: url("../img/charity-bg.png");
   background-size: cover;
   background-position: center;
-  padding-top: 170px;
+  padding-top: 107px;
   padding-bottom: 30px;
   .section-title{
     margin-top: 0;
@@ -286,7 +289,7 @@
     font-size: 40px;
   }
   .section-title{
-    margin-top: 95px;
+    //margin-top: 95px;
     margin-bottom: 95px;
     font-size: 30px;
   }
