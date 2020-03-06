@@ -47,3 +47,8 @@
     background-color: #fff;
   }
 }
+@media screen and (min-width: 1200px){
+  .navbar.fixed-top:not(.bg-white) .nav-item{
+    display: none;
+  }
+}
