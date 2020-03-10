@@ -3,6 +3,8 @@
 @use '@material/textfield/variables' with($height: 52px);
 @use '@material/textfield/mixins' as MDCTextFieldMixins;
 @use '@material/textfield/mdc-text-field' as MDCTextField;
+@use "@material/form-field/mdc-form-field";
+@use "@material/checkbox/mdc-checkbox";
 .landing{
   &-hero{
     background-image: url('../img/hero-bg.png');
