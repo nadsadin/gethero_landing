@@ -4,6 +4,7 @@ const webpack = require("webpack")
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
+const CopyPlugin = require('copy-webpack-plugin');
 
 function generateHtmlPlugins(templateDir) {
     const templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir));
@@ -109,7 +110,10 @@ module.exports = {
             $: 'jquery',
             jQuery: 'jquery',
             'window.jQuery': 'jquery'
-        })
+        }),
+        new CopyPlugin([
+            { from: 'src/form.php', to: 'form.php' },
+        ]),
     ].concat(htmlPlugins),
     devServer: {
         publicPath: '/',

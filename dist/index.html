@@ -263,10 +263,10 @@
   <div id="form">
     <div class="container">
       <div class="section-title">Заполните заявку</div>
-      <form class="request-form">
+      <form class="request-form" action="/form" id="request_form">
         <div class="input-wrap">
           <div class="mdc-text-field text-field mdc-text-field-outlined-shaped mdc-text-field--outlined">
-            <input type="text" id="company" class="mdc-text-field__input" aria-describedby="text-field-outlined-shape-one-helper-text" required>
+            <input type="text" id="company" name="company" class="mdc-text-field__input" aria-describedby="text-field-outlined-shape-one-helper-text" required>
             <div class="mdc-notched-outline mdc-notched-outline--upgraded">
               <div class="mdc-notched-outline__leading"></div>
               <div class="mdc-notched-outline__notch" style="">
@@ -278,7 +278,7 @@
         </div>
         <div class="input-wrap">
           <div class="mdc-text-field text-field mdc-text-field-outlined-shaped mdc-text-field--outlined">
-            <input type="text" id="fullname" class="mdc-text-field__input" aria-describedby="text-field-outlined-shape-one-helper-text" required>
+            <input type="text" id="fullname" name="fullname" class="mdc-text-field__input" aria-describedby="text-field-outlined-shape-one-helper-text" required>
             <div class="mdc-notched-outline mdc-notched-outline--upgraded">
               <div class="mdc-notched-outline__leading"></div>
               <div class="mdc-notched-outline__notch" style="">
@@ -290,7 +290,7 @@
         </div>
         <div class="input-wrap">
           <div class="mdc-text-field text-field mdc-text-field-outlined-shaped mdc-text-field--outlined">
-            <input type="text" id="email" class="mdc-text-field__input" aria-describedby="text-field-outlined-shape-one-helper-text" required>
+            <input type="text" id="email" name="email" class="mdc-text-field__input" aria-describedby="text-field-outlined-shape-one-helper-text" required>
             <div class="mdc-notched-outline mdc-notched-outline--upgraded">
               <div class="mdc-notched-outline__leading"></div>
               <div class="mdc-notched-outline__notch" style="">
@@ -302,7 +302,7 @@
         </div>
         <div class="input-wrap">
           <div class="mdc-text-field text-field mdc-text-field-outlined-shaped mdc-text-field--outlined">
-            <input type="tel" id="phone" class="mdc-text-field__input" aria-describedby="text-field-outlined-shape-one-helper-text" required>
+            <input type="tel" id="phone" name="phone" class="mdc-text-field__input" aria-describedby="text-field-outlined-shape-one-helper-text" required>
             <div class="mdc-notched-outline mdc-notched-outline--upgraded">
               <div class="mdc-notched-outline__leading"></div>
               <div class="mdc-notched-outline__notch" style="">
@@ -314,7 +314,7 @@
         </div>
         <div class="input-wrap">
           <div class="mdc-text-field text-field mdc-text-field-outlined-shaped mdc-text-field--outlined">
-            <input type="text" id="city" class="mdc-text-field__input" aria-describedby="text-field-outlined-shape-one-helper-text">
+            <input type="text" id="city" name="city" class="mdc-text-field__input" aria-describedby="text-field-outlined-shape-one-helper-text">
             <div class="mdc-notched-outline mdc-notched-outline--upgraded">
               <div class="mdc-notched-outline__leading"></div>
               <div class="mdc-notched-outline__notch" style="">
@@ -343,10 +343,24 @@
           </div>
         </div>
         <div class="submit-wrap">
-          <button class="btn btn-yellow btn-round btn-w-240">Отправить</button>
+          <button class="btn btn-yellow btn-round btn-w-240" type="submit">Отправить</button>
         </div>
       </form>
       <div class="footer-text">Заполните заявку</div>
+    </div>
+  </div>
+
+  <div class="modal" tabindex="-1" role="dialog" id="modal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          <h4 class="text-success">Ваш запрос отправлен!</h4>
+          <p>Мы скоро с Вами свяжемся.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-yellow btn-round btn-w-240 mx-auto" data-dismiss="modal">Ок</button>
+        </div>
+      </div>
     </div>
   </div>
 

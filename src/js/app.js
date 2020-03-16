@@ -6,6 +6,7 @@ import {MDCTextField} from '@material/textfield';
 import {MDCFormField} from '@material/form-field';
 import {MDCCheckbox} from '@material/checkbox';
 $(function() {
+    window.$ = window.jQuery = $;
     $(document).on('click', '.anchor-link', function(e) {
         e.preventDefault();
         $('#navbar-collapse').collapse('hide');
@@ -29,5 +30,19 @@ $(function() {
     for (const input of checkboxes) {
         new MDCCheckbox(input)
     }
-    // const textField = new MDCTextField(document.querySelectorAll('.mdc-text-field'));
+    $('#request_form').submit(function (e) {
+        var form = $(this);
+        var url = form.attr('action');
+        $.ajax({
+            type: 'POST',
+            url: url,
+            data: form.serialize(), // serializes the form's elements.
+            success: function(data)
+            {
+                $('.modal-body').html(data);
+                $('#modal').modal('show');
+            }
+        });
+        e.preventDefault();
+    });
 });
